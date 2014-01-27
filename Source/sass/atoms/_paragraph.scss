@@ -1,0 +1,12 @@
+p{
+	margin-bottom: $base-line-height;
+	@include breakpoint(large-up){
+		@include adjust-font-size-to(18px, 3/4);
+	}
+	@include breakpoint(medium){
+		@include adjust-font-size-to(16px, 3/4);
+	}
+	@include breakpoint(small){
+		@include adjust-font-size-to(14px, 3/4);
+	}
+}

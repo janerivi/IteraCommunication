@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+ol, ul{
+	article &{
+		@include breakpoint(large-up){
+			@include adjust-font-size-to(18px, 3/4);
+		}
+		@include breakpoint(medium){
+			@include adjust-font-size-to(16px, 3/4);
+		}
+		@include breakpoint(small){
+			@include adjust-font-size-to(14px, 3/4);
+		}
+		list-style-position: outside;	
+		li{
+			margin-bottom: $base-line-height/2;
+		}
+	}
+}
+
+ul{
+	article &{
+		list-style-type: disc;
+	}
+}
+
+ol{
+	article &{
+		list-style-type: decimal;
+	}
+}
+
+
+
+li{
+	
+}
+
+dl{
+	dt{
+		display:inline;
+		color:$red;
+		&:before{
+			content:"• ";
+		}
+	}
+	@extend p;
+}

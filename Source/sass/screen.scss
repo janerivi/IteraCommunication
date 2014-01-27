@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* Itera Styles
+	By Itera Gazette AS
+	Made using SCSS and Compass: ;
+	Original SCSS found in https://bitbucket.org/frontendcafe/itera.dev
+	*/
+
+// Compass imports
+//*******************
+@import "compass";
+@import "compass/reset";
+@import "compass/support";
+@import "compass/css3/text-shadow";
+@import "compass/css3/transition";
+@import "compass/layout/grid-background";
+@import "compass/typography/vertical_rhythm";
+@import "susy";
+
+/*BASE*/
+@import "base/settings";
+@import "base/mixins";
+@import "base/typography";
+
+//Atoms
+/*
+	Building blocks of an interface
+	Cant be broken down any further without losing their meaning
+	Abstract
+	Often not too usefull on their own
+*/
+@import "atoms/headings";
+@import "atoms/subheadings";
+@import "atoms/headingswithlinks";
+@import "atoms/paragraph";
+@import "atoms/blockquote";
+@import "atoms/inlineelements";
+@import "atoms/captions";
+@import "atoms/bylines";
+@import "atoms/buttons";
+@import "atoms/time";
+@import "atoms/lists";
+@import "atoms/forms";
+@import "atoms/hr";
+@import "atoms/animations";
+@import "atoms/symbols";
+
+//Molecules
+/*
+	Group of atoms bonded together
+	More concrete than atoms
+	Do one thing and do it well
+	Serve as a backbone for a more complex system
+*/
+
+
+//Organisms
+/*
+	Group of molecules joined together to form a distinct section
+	Complex molecules
+	Can consist of similar and/or different molecule types
+	Encourages creating standalone portable reusable components
+*/
+
+
+
+
+//Templates
+/*
+	Page-level
+	Mostly comprised of groups of organisms
+*/
+@import "templates/grid";
+
+
+
+
+
+
+
+
+
+
+
+

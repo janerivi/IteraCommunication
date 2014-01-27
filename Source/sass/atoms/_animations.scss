@@ -1,0 +1,50 @@
+// Animations
+/* Animations */
+
+@include keyframe(slideup) {
+    0% {
+        @include transform(translateY(100px));
+        opacity: 0;
+    }
+ 
+    100% {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+}
+
+// The upside movement
+@include keyframe(scrollinganim){
+	0%{
+		padding: 0; 
+	}
+	50%{
+		padding: 1em;
+	}
+	100%{
+		padding: 0; 
+	}
+}
+
+// The navigation movement on upside scroll
+@include keyframe(scrollinganim-navigation){
+	0%{
+		top: 0; 
+	}
+	50%{
+		top: 2em;
+	}
+	100%{
+		top: 0; 
+	}
+}
+
+@include keyframe(upsidearrow){
+	0%{
+		top: -6px; 
+	}
+	100%{
+		top: -10px;
+	}
+}
+

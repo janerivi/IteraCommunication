@@ -1,0 +1,28 @@
+form{
+	input{
+		font-family: $mainfont;
+		@include adjust-font-size-to(16px);
+		-webkit-appearance: none;
+		appearance: none;
+		border:1px solid $light-grey;	
+		padding: 5px;
+		width: 100%;
+		margin-bottom: $base-line-height/2;
+	}
+	label{
+		display: block;
+		text-align: left;
+	}
+	[type=submit]{
+		background: $red;
+		border: 0;
+		color: white;
+	}
+	table tbody tr{
+		border: 0;
+	}
+	textarea{
+		width: 100%;
+		max-width: 100%;
+	}
+}

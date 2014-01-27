@@ -1,0 +1,5 @@
+blockquote{
+	font-family: $mainfont-italic;
+	text-align: center;
+	@include adjust-font-size-to(40px);
+}

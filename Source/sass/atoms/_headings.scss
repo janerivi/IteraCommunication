@@ -1,0 +1,39 @@
+h1{
+	@include adjust-font-size-to(60px, 5/2);
+	font-family: $mainfont-bold;
+	font-weight: normal;
+	//letter-spacing: 1px;
+	margin: 0 0 20px 0;
+	@include breakpoint(medium){
+		@include adjust-font-size-to(40px);
+	}
+	@include breakpoint(small){
+		@include adjust-font-size-to(24px);
+	}
+}
+
+h2{
+	@include adjust-font-size-to($h2-size, 5/4);
+	font-family: $mainfont-bold;
+	margin: 0 0 $base-line-height/2 0;
+	// Small ************************
+	@include breakpoint(small){
+		@include adjust-font-size-to(20px);
+		margin-bottom: $base-line-height/2;
+	}
+}
+
+h3{
+	@include adjust-font-size-to($h3-size);
+	font-family: $mainfont-bold;
+}
+
+h4{
+	@include adjust-font-size-to($h4-size);
+	font-family: $mainfont-bold;
+	text-transform: uppercase;
+}
+
+h5{
+	
+}

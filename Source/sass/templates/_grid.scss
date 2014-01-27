@@ -1,0 +1,70 @@
+/* 
+The responsive grid 
+**************************/
+// Grid settings can be used on all elements using the syntax; @include span-columns(x, y); where "x" is the desired number of columns and y is the containing elements number of columns. Add (x omega, y) if the element is the last element in its row.
+
+//Setting up vertical rythm and box-sizing
+@include border-box-sizing;
+@include establish-baseline;
+
+
+img{
+	width: 100%;
+	max-width: 100%;
+}
+
+
+
+// Contain defines the width of the site and sets up the grid
+.contain {
+	@include container;
+	// Small screen
+	@include at-breakpoint(0 $small-breakpoint-value $total-columns-small) {
+		@if $view-helpers{@include susy-grid-background;} // This draws the baselines or columns if $view-helpers = true;
+		@if $view-base-line-grid{@include baseline-grid-background($base-line-height, #4affff)}
+		padding-left: $base-line-height/2;
+		padding-right: $base-line-height/2;
+		//padding-top: $base-line-height;
+	}
+  
+  // Medium screen
+  @include at-breakpoint($small-breakpoint-value-1 $medium-breakpoint-value $total-columns-medium) {
+		@if $view-helpers{@include susy-grid-background;} // This draws the baselines or columns if $view-helpers = true;
+		padding-left: $base-line-height;
+		padding-right: $base-line-height;
+		
+		
+  }
+  
+  // Large screen
+  @include at-breakpoint($medium-breakpoint-value-1 $large-breakpoint-value $total-columns-large) {
+		@if $view-helpers{@include susy-grid-background;} // This draws the baselines or columns if $view-helpers = true;
+
+  }
+  
+  // X-Large screen
+  @include at-breakpoint($large-breakpoint-value-1 em(3000px) $total-columns-xlarge) {
+		@if $view-helpers{@include susy-grid-background;} // This draws the baselines or columns if $view-helpers = true;
+
+  }
+
+}
+
+/* Visibility for various sizes */
+
+.hide-for-small{	
+	@include breakpoint(small){
+		display:none !important;
+	}
+}
+.hide-for-medium{
+	@include breakpoint(medium){
+		display:none !important;
+	}
+}
+.hide-for-large{
+	@include breakpoint(medium-up){
+		display:none !important;
+	}
+}
+

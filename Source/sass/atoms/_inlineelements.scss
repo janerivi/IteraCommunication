@@ -1,0 +1,21 @@
+//Default link
+a{
+	color: $red;
+}
+
+em{
+	font-weight: normal;
+	font-family: $mainfont-italic;
+}
+strong{
+	font-weight: normal;
+	font-family: $mainfont-bold;
+}
+
+.red{
+	color: $red;
+}
+
+.blue{
+	color: $blue;
+}

@@ -1,0 +1,56 @@
+// SETTINGS
+// Draws columns or baseline grid while developing as well as current breakpoint.
+// This is not pixelperfect, its more a guideline
+$view-helpers 				:false;
+$view-base-line-grid 	:false;
+$view-breakpoints 	:false;
+// STEP 01 - VERTICAL RYTHM
+
+// Setting vertical rythm. Important for vertical alignment of text and elements.
+// Optimal settings would be a font-size and line-height that are dividable and can be used to calculate other sizes. Odd-numbers are "bad" numbers
+// Its smart to use $base-line-height*X for sizes to make sure things stick to the grid.
+$base-font-size 			:18px; // Normally your standard <p> size
+$base-line-height 		:30px; 
+
+
+
+// STEP 02 - BREAKPOINTS
+$small-breakpoint-value 	:43em;
+$medium-breakpoint-value 	:65em;
+$large-breakpoint-value 	:75em;
+$page-max-width 				:73em;
+
+
+// STEP 03 - BASE GRID SETTINGS. 
+$total-columns  :12;    	// default grid number: ;
+$column-width   :6em;      // width of columns without gutter      
+$gutter-width   :1.2em;   	// gutters between columns
+$grid-padding   :3em; 	 	// padding left and right of content
+$container-style:magic; 	// magic = sets a "max-width" calculated from your column settings. This is the best one to use for responsive grids.
+									// static = sets a fixed "width" calculated from your column settings. Not responive
+									// fluid = sets a width = 100%. Uses the entire browser width
+$total-columns-small 	:4;
+$total-columns-medium 	:6;
+$total-columns-large 	:8;
+$total-columns-xlarge 	:8;
+
+$offset:0em;
+
+// STEP 04 - COLORS (Optional)
+$base-color 			:red;
+$base-font-color 		:#3c3c3b;
+$grey 					:#3c3c3b;
+$grey-transparent 	:rgba(40,40,40, .95);
+$light-grey 			:#9d9c9c; 
+$red 						:#d20a10;
+$red-transparent 		:rgba(210,10,16,.9);
+$blue 							:#00b1db;
+
+
+// STEP 05 - HEADINGS (Optional)
+$h1-size 	:82px;
+$h2-size 	:30px;
+$h3-size 	:20px;
+$h4-size 	:16px;
+
+
