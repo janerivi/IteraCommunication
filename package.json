@@ -24,7 +24,7 @@
     "grunt-ejs": "~0.1.0",
     "ejs": "~0.8.4",
     "grunt-contrib-copy": "~0.4.1",
-    "grunt-prettify": "~0.2.9",
+    "grunt-prettify": "~0.3.4",
     "grunt-clean": "~0.4.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-lib-contrib": "~0.6.1",
